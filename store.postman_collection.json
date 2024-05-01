@@ -1,0 +1,262 @@
+{
+	"info": {
+		"_postman_id": "47fd4073-8cea-43c7-8742-c620bea15c07",
+		"name": "store",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33110825"
+	},
+	"item": [
+		{
+			"name": "place an order for a pet",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"petId\": 9223372036854598414,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2024-03-12T06:39:58.769Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{Store collection URL}}/order"
+			},
+			"response": [
+				{
+					"name": "placed an order for Bruno",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"petId\": 9223372036854598414,\r\n  \"quantity\": 1,\r\n  \"shipDate\": \"2024-03-12T06:39:58.769Z\",\r\n  \"status\": \"placed\",\r\n  \"complete\": true\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Store collection URL}}/order"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:47:36 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854327391,\n    \"petId\": 9223372036854598414,\n    \"quantity\": 1,\n    \"shipDate\": \"2024-03-12T06:39:58.769+0000\",\n    \"status\": \"placed\",\n    \"complete\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "find purchase order by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Store collection URL}}/order/9223372036854775807"
+			},
+			"response": [
+				{
+					"name": "found purchase order by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Store collection URL}}/order/9223372036854775807"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 13 Mar 2024 07:15:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854775807,\n    \"petId\": 9223372036854598414,\n    \"quantity\": 1,\n    \"shipDate\": \"2024-03-12T06:39:58.769+0000\",\n    \"status\": \"placed\",\n    \"complete\": true\n}"
+				}
+			]
+		},
+		{
+			"name": "delete purchase order by id",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{Store collection URL}}/order/9223372036854775807"
+			},
+			"response": [
+				{
+					"name": "deleted purchase order by id",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{Store collection URL}}/order/9223372036854775807"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Wed, 13 Mar 2024 07:16:16 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"9223372036854775807\"\n}"
+				}
+			]
+		},
+		{
+			"name": "returns pet inventories by status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Store collection URL}}/inventory"
+			},
+			"response": [
+				{
+					"name": "Returned pet inventories by status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Store collection URL}}/inventory"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:49:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"totvs\": 2,\n    \"sold\": 9,\n    \"green\": 1,\n    \"string\": 652,\n    \"pending\": 8,\n    \"dfgdfgdf\": 3,\n    \"available\": 313,\n    \"not available\": 1\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "Store collection URL",
+			"value": "https://petstore.swagger.io/v2/store"
+		}
+	]
+}

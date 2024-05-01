@@ -1,0 +1,559 @@
+{
+	"info": {
+		"_postman_id": "38d51717-4e94-4ae8-9f41-9d8d34089141",
+		"name": "user",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33110825"
+	},
+	"item": [
+		{
+			"name": "Creates list of user with given input arret",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{User Collection URL}}/creatWithArray"
+			},
+			"response": []
+		},
+		{
+			"name": "Get user by user name",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{User Collection URL}}/{AbhishekVyapari}"
+			},
+			"response": [
+				{
+					"name": "404 error not found",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{User Collection URL}}/AbhishekVyapari"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:36:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 1,\n    \"type\": \"error\",\n    \"message\": \"User not found\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Update User",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"AbhiVyapari\",\r\n  \"firstName\": \"Abhi\",\r\n  \"lastName\": \"Vyapari\",\r\n  \"email\": \"abhi@gmail.com\",\r\n  \"password\": \"Abhi@123\",\r\n  \"phone\": \"1234567890\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{User Collection URL}}/AbhishekVyapari"
+			},
+			"response": [
+				{
+					"name": "Updated User Abhi",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"AbhiVyapari\",\r\n  \"firstName\": \"Abhi\",\r\n  \"lastName\": \"Vyapari\",\r\n  \"email\": \"abhi@gmail.com\",\r\n  \"password\": \"Abhi@123\",\r\n  \"phone\": \"1234567890\",\r\n  \"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{User Collection URL}}/AbhishekVyapari"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:31:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"9223372036854775807\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete user",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{User Collection URL}}/AbhishekVyapari"
+			},
+			"response": [
+				{
+					"name": "Delete user 404 error not found",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{User Collection URL}}/AbhishekVyapari"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:37:33 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Logs user into system",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{User Collection URL}}/login?username=YashDarne&password=Yash@1888",
+					"host": [
+						"{{User Collection URL}}"
+					],
+					"path": [
+						"login"
+					],
+					"query": [
+						{
+							"key": "username",
+							"value": "YashDarne",
+							"description": "The user name for login"
+						},
+						{
+							"key": "password",
+							"value": "Yash@1888",
+							"description": "The password for login in clear text"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Logged user Yash Darne  into system",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "{{User Collection URL}}/login?username=YashDarne&password=Yash@1888",
+							"host": [
+								"{{User Collection URL}}"
+							],
+							"path": [
+								"login"
+							],
+							"query": [
+								{
+									"key": "username",
+									"value": "YashDarne",
+									"description": "The user name for login"
+								},
+								{
+									"key": "password",
+									"value": "Yash@1888",
+									"description": "The password for login in clear text"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 21:02:09 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "X-Expires-After",
+							"value": "Tue Mar 12 22:02:09 UTC 2024"
+						},
+						{
+							"key": "X-Rate-Limit",
+							"value": "5000"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"logged in user session:1710277329548\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Logs out current logged in user session",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{User Collection URL}}/logout"
+			},
+			"response": [
+				{
+					"name": "Logged out current logged in user session",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{User Collection URL}}/logout"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 21:02:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"ok\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Create user",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"AbhishekVyapari\",\r\n  \"firstName\": \"Abhishek\",\r\n  \"lastName\": \"Vyapari\",\r\n  \"email\": \"abhishekvyapari@gmail.com\",\r\n  \"password\": \"Abhi@1888\",\r\n  \"phone\": \"7620935996\",\r\n  \"userStatus\": 0\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{User Collection URL}}"
+			},
+			"response": [
+				{
+					"name": "user Yash Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"Yashdarne\",\r\n  \"firstName\": \"Yash\",\r\n  \"lastName\": \"Darne\",\r\n  \"email\": \"ydarne8@gmail.com\",\r\n  \"password\": \"Yash@1888\",\r\n  \"phone\": \"7620214815\",\r\n  \"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{User Collection URL}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:26:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"9223372036854775807\"\n}"
+				},
+				{
+					"name": "User Abhishek Created",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"AbhishekVyapari\",\r\n  \"firstName\": \"Abhishek\",\r\n  \"lastName\": \"Vyapari\",\r\n  \"email\": \"abhishekvyapari@gmail.com\",\r\n  \"password\": \"Abhi@1888\",\r\n  \"phone\": \"7620935996\",\r\n  \"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{User Collection URL}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:28:41 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"9223372036854775807\"\n}"
+				},
+				{
+					"name": "Created Abhishek new user",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"username\": \"AbhishekVyapari\",\r\n  \"firstName\": \"Abhishek\",\r\n  \"lastName\": \"Vyapari\",\r\n  \"email\": \"abhishekvyapari@gmail.com\",\r\n  \"password\": \"Abhi@1888\",\r\n  \"phone\": \"7620935996\",\r\n  \"userStatus\": 0\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{User Collection URL}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:35:40 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"code\": 200,\n    \"type\": \"unknown\",\n    \"message\": \"9223372036854775807\"\n}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "User Collection URL",
+			"value": "https://petstore.swagger.io/v2/user"
+		}
+	]
+}

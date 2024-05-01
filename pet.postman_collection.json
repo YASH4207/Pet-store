@@ -1,0 +1,629 @@
+{
+	"info": {
+		"_postman_id": "07f54781-6c62-48e5-9942-4788acf23e88",
+		"name": "pet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "33110825"
+	},
+	"item": [
+		{
+			"name": "Add a new pet to a store",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Jacky\"\r\n  },\r\n  \"name\": \"Dog\",\r\n  \"photoUrls\": [\r\n    \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=13&itb=0&ajaxhist=0&ajaxserp=0\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"cute Dog\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{Pet collection url}}"
+			},
+			"response": [
+				{
+					"name": "dog",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Sheru\"\r\n  },\r\n  \"name\": \"doggie\",\r\n  \"photoUrls\": [\r\n    \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"cute dog\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://petstore.swagger.io/v2/pet"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 10:44:15 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854329038,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Sheru\"\n    },\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute dog\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				},
+				{
+					"name": "cat",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Maggie\"\r\n  },\r\n  \"name\": \"cat\",\r\n  \"photoUrls\": [\r\n    \"https://www.bing.com/images/search?view=detailV2&ccid=%2fJ%2fzkeC5&id=2476F75F3348A29CD1B4AF1380962B5307587E33&thid=OIP._J_zkeC5KSf8SlJqk5ssowHaHX&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.fc9ff391e0b92927fc4a526a939b2ca3%3frik%3dM35YB1MrloATrw%26riu%3dhttp%253a%252f%252fupload.wikimedia.org%252fwikipedia%252fcommons%252fd%252fd4%252fCat_March_2010-1a.jpg%26ehk%3dlmx5Dow%252btE7KUtrgWeamODrZNBeLisLC4x4%252bkXQRDq8%253d%26risl%3d1%26pid%3dImgRaw%26r%3d0&exph=2212&expw=2225&q=cat&simid=608003967764889308&FORM=IRPRST&ck=34067160484FBA934C06CF66E5D81BA5&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"cute cat\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "https://petstore.swagger.io/v2/pet"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 11:01:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854329315,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Maggie\"\n    },\n    \"name\": \"cat\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=%2fJ%2fzkeC5&id=2476F75F3348A29CD1B4AF1380962B5307587E33&thid=OIP._J_zkeC5KSf8SlJqk5ssowHaHX&mediaurl=https%3a%2f%2fth.bing.com%2fth%2fid%2fR.fc9ff391e0b92927fc4a526a939b2ca3%3frik%3dM35YB1MrloATrw%26riu%3dhttp%253a%252f%252fupload.wikimedia.org%252fwikipedia%252fcommons%252fd%252fd4%252fCat_March_2010-1a.jpg%26ehk%3dlmx5Dow%252btE7KUtrgWeamODrZNBeLisLC4x4%252bkXQRDq8%253d%26risl%3d1%26pid%3dImgRaw%26r%3d0&exph=2212&expw=2225&q=cat&simid=608003967764889308&FORM=IRPRST&ck=34067160484FBA934C06CF66E5D81BA5&selectedIndex=0&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute cat\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				},
+				{
+					"name": "Moti addded to a store",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n  \"id\": 0,\r\n  \"category\": {\r\n    \"id\": 0,\r\n    \"name\": \"Moti\"\r\n  },\r\n  \"name\": \"Dog\",\r\n  \"photoUrls\": [\r\n    \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=13&itb=0&ajaxhist=0&ajaxserp=0\"\r\n  ],\r\n  \"tags\": [\r\n    {\r\n      \"id\": 0,\r\n      \"name\": \"cute Dog\"\r\n    }\r\n  ],\r\n  \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Pet collection url}}"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:13:57 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854597982,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Moti\"\n    },\n    \"name\": \"Dog\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=13&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute Dog\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Find pet by id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "https://petstore.swagger.io/v2/pet/9223372036854598414"
+			},
+			"response": [
+				{
+					"name": "Search for pet by id",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "https://petstore.swagger.io/v2/pet/9223372036854329038"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 10:55:29 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854329038,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Sheru\"\n    },\n    \"name\": \"doggie\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute dog\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				},
+				{
+					"name": "Searched Moti by its ID",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "https://petstore.swagger.io/v2/pet/9223372036854597982"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:15:25 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854597982,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Moti\"\n    },\n    \"name\": \"Dog\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=13&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute Dog\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				}
+			]
+		},
+		{
+			"name": "update an existing pet",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"id\": 9223372036854329038,\r\n    \"category\": {\r\n        \"id\": 0,\r\n        \"name\": \"Dog\"\r\n    },\r\n    \"name\": \"Bob\",\r\n    \"photoUrls\": [\r\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 0,\r\n            \"name\": \"cute dog\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": "{{Petstore Base URL}}/pet"
+			},
+			"response": [
+				{
+					"name": "Sheru was updated to Charlie",
+					"originalRequest": {
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"id\": 9223372036854329038,\r\n    \"category\": {\r\n        \"id\": 0,\r\n        \"name\": \"Dog\"\r\n    },\r\n    \"name\": \"Charlie\",\r\n    \"photoUrls\": [\r\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0\"\r\n    ],\r\n    \"tags\": [\r\n        {\r\n            \"id\": 0,\r\n            \"name\": \"cute dog\"\r\n        }\r\n    ],\r\n    \"status\": \"available\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": "{{Petstore Base URL}}/pet"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 11:45:26 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854329038,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Dog\"\n    },\n    \"name\": \"Charlie\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=14&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute dog\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Delete  PET",
+			"request": {
+				"method": "DELETE",
+				"header": [],
+				"url": "{{Petstore Base URL}}/pet/9223372036854329038"
+			},
+			"response": [
+				{
+					"name": "deleted pet",
+					"originalRequest": {
+						"method": "DELETE",
+						"header": [],
+						"url": "{{Petstore Base URL}}/pet/9223372036854329038"
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "plain",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 11:51:33 GMT"
+						},
+						{
+							"key": "Content-Length",
+							"value": "0"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": null
+				}
+			]
+		},
+		{
+			"name": "Find pet by status",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "{{Pet collection url}}/findByStatus"
+			},
+			"response": [
+				{
+					"name": "Found pet by status",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"url": "{{Pet collection url}}/findByStatus"
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 20:50:19 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "[]"
+				}
+			]
+		},
+		{
+			"name": "Updates a pet in the store using pet data",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "{{Pet collection url}}/9223372036854598649?petId=9223372036854598649&name=Jony&status=available",
+					"host": [
+						"{{Pet collection url}}"
+					],
+					"path": [
+						"9223372036854598649"
+					],
+					"query": [
+						{
+							"key": "petId",
+							"value": "9223372036854598649",
+							"description": "ID of pet that needs to be updated"
+						},
+						{
+							"key": "name",
+							"value": "Jony",
+							"description": "Updated name of the pet"
+						},
+						{
+							"key": "status",
+							"value": "available",
+							"description": "Updated status of the pet"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Not Updated a pet in the store using pet data",
+					"originalRequest": {
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{Pet collection url}}/9223372036854598649?petId=9223372036854598649&name=Jony&status=available",
+							"host": [
+								"{{Pet collection url}}"
+							],
+							"path": [
+								"9223372036854598649"
+							],
+							"query": [
+								{
+									"key": "petId",
+									"value": "9223372036854598649",
+									"description": "ID of pet that needs to be updated"
+								},
+								{
+									"key": "name",
+									"value": "Jony",
+									"description": "Updated name of the pet"
+								},
+								{
+									"key": "status",
+									"value": "available",
+									"description": "Updated status of the pet"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Date",
+							"value": "Tue, 12 Mar 2024 21:08:08 GMT"
+						},
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						},
+						{
+							"key": "Transfer-Encoding",
+							"value": "chunked"
+						},
+						{
+							"key": "Connection",
+							"value": "keep-alive"
+						},
+						{
+							"key": "Access-Control-Allow-Origin",
+							"value": "*"
+						},
+						{
+							"key": "Access-Control-Allow-Methods",
+							"value": "GET, POST, DELETE, PUT"
+						},
+						{
+							"key": "Access-Control-Allow-Headers",
+							"value": "Content-Type, api_key, Authorization"
+						},
+						{
+							"key": "Server",
+							"value": "Jetty(9.2.9.v20150224)"
+						}
+					],
+					"cookie": [],
+					"body": "{\n    \"id\": 9223372036854598649,\n    \"category\": {\n        \"id\": 0,\n        \"name\": \"Jacky\"\n    },\n    \"name\": \"Dog\",\n    \"photoUrls\": [\n        \"https://www.bing.com/images/search?view=detailV2&ccid=lzYGzTOT&id=595E9B360C5E1FF1A7A55F8543A8CED4C06A3BB2&thid=OIP.lzYGzTOTo8RUQBDtPfjXyQHaFL&mediaurl=https%3a%2f%2fthesmartcanine.com%2fwp-content%2fuploads%2f2019%2f09%2fsinhala-hound-indian-dog-breed.jpg&exph=562&expw=804&q=indian+breed+dogs&simid=608051916766195544&FORM=IRPRST&ck=FFBFE32C4FB8E9BFBAA4A80306A442EC&selectedIndex=13&itb=0&ajaxhist=0&ajaxserp=0\"\n    ],\n    \"tags\": [\n        {\n            \"id\": 0,\n            \"name\": \"cute Dog\"\n        }\n    ],\n    \"status\": \"available\"\n}"
+				}
+			]
+		},
+		{
+			"name": "Uploads an Image",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": "{{Pet collection url}}/{petId}/uploadImage"
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "Pet collection url",
+			"value": "https://petstore.swagger.io/v2/pet"
+		}
+	]
+}
